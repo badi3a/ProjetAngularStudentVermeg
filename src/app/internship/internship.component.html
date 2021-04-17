@@ -1,0 +1,13 @@
+<div class="col-md-3">
+  <div class="card" style="width: 18rem;">
+    <img src="../../assets/img.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{intenShip.title}}</h5>
+      <p class="card-text">{{intenShip.description}}</p>
+      <button class="btn btn-primary" [disabled]="!intenShip.available" (click)="sendNotifParent()">
+        Apply Now :)
+      </button>
+      <button class="btn btn-info" style="float: right">like <3</button>
+    </div>
+  </div>
+</div>

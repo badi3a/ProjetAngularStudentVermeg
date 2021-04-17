@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<form>
+  <label>Search Period : </label>
+  <input type="number" name="periodMax"  [(ngModel)]="period" class="form-control">
+</form>
+
+<div class="row">
+  <app-internship *ngFor="let i of list" [intenShip]="i">
+
+  </app-internship>
+</div>
